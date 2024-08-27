@@ -844,7 +844,7 @@ footer .footer-links .links span {
   }
 
   footer .content {
-    width: 75%;
+    width: 85%;
   }
 
   footer .content .foot-logo {
@@ -931,6 +931,7 @@ footer .footer-links .links span {
   .video-play .video-text h1 {
     margin: 0;
     text-align: center;
+    font-size: 2rem;
   }
 
   .black-cont {
@@ -1207,7 +1208,7 @@ footer .footer-links .links span {
   }
 
   footer .content {
-    width: 75%;
+    width: 85%;
   }
 
   footer .content .foot-logo {

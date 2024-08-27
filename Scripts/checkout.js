@@ -1,8 +1,10 @@
 import { cartData } from "../Data/cartData.js";
 import { calcuCartTotalPrice, totalPrice } from "../Utils/calcuCartPrice.js";
 import { donationData } from "../Data/dontationData.js";
+import { popMenu } from "../Utils/pop-menu.js";
 
 calcuCartTotalPrice();
+popMenu();
 
 document.querySelector(".orders").innerHTML = cartData
   .map((order) => {
@@ -26,8 +28,8 @@ document.querySelector(".orders").innerHTML = cartData
 document.querySelector(".order-bottom").innerHTML = ` <h4>Checkout Total:</h4>
 <h4>$${totalPrice.toFixed(2)}</h4>`;
 
-let country = geoplugin_countryName();
-// let country = "United States";
+// let country = geoplugin_countryName();
+let country = "United States";
 
 if (country === "United States") {
   document.querySelector(".us").checked = true;
